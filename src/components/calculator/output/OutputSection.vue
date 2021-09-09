@@ -21,11 +21,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/_mq.scss";
+
 div {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-areas: "k v" "aside v";
   margin-bottom: 1.25rem;
+
+  @include mq {
+    grid-template-columns: 30% 70%;
+  }
 }
 
 h3 {
@@ -47,5 +53,9 @@ span {
   justify-self: end;
   display: flex;
   word-break: break-word;
+
+  @include mq {
+    font-size: 3rem;
+  }
 }
 </style>
