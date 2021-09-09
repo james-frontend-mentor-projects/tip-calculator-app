@@ -1,0 +1,7 @@
+$breakpoint: 57.5rem;
+
+@mixin mq() {
+  @media only screen and (min-width: $breakpoint) {
+    @content;
+  }
+}
