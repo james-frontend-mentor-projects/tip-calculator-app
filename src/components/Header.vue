@@ -1,6 +1,7 @@
 <template>
   <header>
-    <img src="/images/logo.svg" title="Splitter" role="title" />
+    <h1 class="sr-only">Tips calculator app</h1>
+    <img src="/images/logo.svg" alt="website logo" />
   </header>
 </template>
 

@@ -1,8 +1,8 @@
 <template>
   <div>
     <h3>{{ k }}</h3>
-    <aside>/ person</aside>
-    <span>{{ v === Infinity ? "&infin;" : `$${value}` }}</span>
+    <span class="per-person">/ person</span>
+    <span class="value">{{ v === Infinity ? "&infin;" : `$${value}` }}</span>
   </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
 div {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-areas: "k v" "aside v";
+  grid-template-areas: "k v" "per-person v";
   margin-bottom: 1.25rem;
 
   @include mq {
@@ -40,13 +40,13 @@ h3 {
   font-size: 1rem;
 }
 
-aside {
-  grid-area: aside;
+.per-person {
+  grid-area: per-person;
   color: var(--output-subheading);
   font-size: 0.813rem;
 }
 
-span {
+.value {
   grid-area: v;
   font-size: 2rem;
   color: var(--output-value);
