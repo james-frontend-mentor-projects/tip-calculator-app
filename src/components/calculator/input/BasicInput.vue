@@ -8,6 +8,8 @@
       type="number"
       @input="updateValue($event.target.value)"
       :class="errorCondition && 'invalid'"
+      min="0"
+      placeholder="0"
     />
   </div>
 </template>

@@ -91,7 +91,7 @@ main {
       "bill-section             output-section"
       "tip-percentage-section   output-section"
       "number-of-people-section output-section";
-    gap: 3rem;
+    gap: 2.5rem;
 
     .bill-section {
       grid-area: bill-section;

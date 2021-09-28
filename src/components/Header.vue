@@ -9,6 +9,6 @@
 header {
   display: flex;
   justify-content: center;
-  padding: 3.125rem 9rem 2.5rem 9rem;
+  padding: 3.125rem 0;
 }
 </style>
