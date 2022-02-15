@@ -23,9 +23,9 @@
       >
       <basic-input
         v-model.number="numberOfPeople"
-        imgsrc="/images/icon-dollar.svg"
+        imgsrc="/images/icon-person.svg"
         id="numberOfPeople"
-        imgalt="dollar sign"
+        imgalt="person outline"
         :errorCondition="numberOfPeople === 0"
       />
     </section>
